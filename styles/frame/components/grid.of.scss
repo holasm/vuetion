@@ -1,0 +1,307 @@
+@import "var.grid";
+
+
+// .col{
+//   position: relative;
+//   padding: 0 8px;
+//   float: left;
+//   width: 100%;
+//   // background: #f8f8f8;
+//   box-sizing: border-box;
+// }
+
+//xxm
+@media only screen and (max-width: $xtra-small-screen-width){
+  //offset
+  .o-xxsm-c0of5{
+    @include o(0, 5);
+  }
+  .o-xxsm-c1of5{
+    @include o(1, 5);
+  }
+  .o-xxsm-c2of5{
+    @include o(2, 5);
+  }
+  .o-xxsm-c3of5{
+    @include o(3, 5);
+  }
+  .o-xxsm-c4of5{
+    @include o(4, 5);
+  }
+  .o-xxsm-c5of5{
+    @include o(5, 5);
+  }
+
+  //size
+  .xxsm-c0of5{
+    @include o(0, 5);
+  }
+  .xxsm-c1of5{
+    @include o(1, 5);
+  }
+  .xxsm-c2of5{
+    @include o(2, 5);
+  }
+  .xxsm-c3of5{
+    @include o(3, 5);
+  }
+  .xxsm-c4of5{
+    @include o(4, 5);
+  }
+  .xxsm-c5of5{
+    @include o(5, 5);
+  }
+
+}
+
+//xm
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  .o-xsm-c0of5{
+    @include o(0, 5);
+  }
+  .o-xsm-c1of5{
+    @include o(1, 5);
+  }
+  .o-xsm-c2of5{
+    @include o(2, 5);
+  }
+  .o-xsm-c3of5{
+    @include o(3, 5);
+  }
+  .o-xsm-c4of5{
+    @include o(4, 5);
+  }
+  .o-xsm-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .xsm-c0of5{
+    @include o(0, 5);
+  }
+  .xsm-c1of5{
+    @include o(1, 5);
+  }
+  .xsm-c2of5{
+    @include o(2, 5);
+  }
+  .xsm-c3of5{
+    @include o(3, 5);
+  }
+  .xsm-c4of5{
+    @include o(4, 5);
+  }
+  .xsm-c5of5{
+    @include o(5, 5);
+  }
+}
+
+//sm
+@media only screen and (min-width: $small-screen-width+1px){
+  .o-sm-c0of5{
+    @include o(0, 5);
+  }
+  .o-sm-c1of5{
+    @include o(1, 5);
+  }
+  .o-sm-c2of5{
+    @include o(2, 5);
+  }
+  .o-sm-c3of5{
+    @include o(3, 5);
+  }
+  .o-sm-c4of5{
+    @include o(4, 5);
+  }
+  .o-sm-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .sm-c0of5{
+    @include o(0, 5);
+  }
+  .sm-c1of5{
+    @include o(1, 5);
+  }
+  .sm-c2of5{
+    @include o(2, 5);
+  }
+  .sm-c3of5{
+    @include o(3, 5);
+  }
+  .sm-c4of5{
+    @include o(4, 5);
+  }
+  .sm-c5of5{
+    @include o(5, 5);
+  }
+}
+
+//md
+@media only screen and (min-width: $medium-screen-width+1px){
+  .o-md-c0of5{
+    @include o(0, 5);
+  }
+  .o-md-c1of5{
+    @include o(1, 5);
+  }
+  .o-md-c2of5{
+    @include o(2, 5);
+  }
+  .o-md-c3of5{
+    @include o(3, 5);
+  }
+  .o-md-c4of5{
+    @include o(4, 5);
+  }
+  .o-md-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .md-c0of5{
+    @include o(0, 5);
+  }
+  .md-c1of5{
+    @include o(1, 5);
+  }
+  .md-c2of5{
+    @include o(2, 5);
+  }
+  .md-c3of5{
+    @include o(3, 5);
+  }
+  .md-c4of5{
+    @include o(4, 5);
+  }
+  .md-c5of5{
+    @include o(5, 5);
+  }
+}
+
+//lg
+@media only screen and (min-width: $large-screen-width+1px){
+  .o-lg-c0of5{
+    @include o(0, 5);
+  }
+  .o-lg-c1of5{
+    @include o(1, 5);
+  }
+  .o-lg-c2of5{
+    @include o(2, 5);
+  }
+  .o-lg-c3of5{
+    @include o(3, 5);
+  }
+  .o-lg-c4of5{
+    @include o(4, 5);
+  }
+  .o-lg-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .lg-c0of5{
+    @include ratio(0, 5);
+  }
+  .lg-c1of5{
+    @include ratio(1, 5);
+  }
+  .lg-c2of5{
+    @include ratio(2, 5);
+  }
+  .lg-c3of5{
+    @include ratio(3, 5);
+  }
+  .lg-c4of5{
+    @include ratio(4, 5);
+  }
+  .lg-c5of5{
+    @include ratio(5, 5);
+  }
+}
+
+//xlg - xtra large screen
+@media only screen and (min-width: $xtra-large-screen-width+1px){
+ .o-xlg-c0of5{
+    @include o(0, 5);
+  }
+  .o-xlg-c1of5{
+    @include o(1, 5);
+  }
+  .o-xlg-c2of5{
+    @include o(2, 5);
+  }
+  .o-xlg-c3of5{
+    @include o(3, 5);
+  }
+  .o-xlg-c4of5{
+    @include o(4, 5);
+  }
+  .o-xlg-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .xlg-c0of5{
+    @include ratio(0, 5);
+  }
+  .xlg-c1of5{
+    @include ratio(1, 5);
+  }
+  .xlg-c2of5{
+    @include ratio(2, 5);
+  }
+  .xlg-c3of5{
+    @include ratio(3, 5);
+  }
+  .xlg-c4of5{
+    @include ratio(4, 5);
+  }
+  .xlg-c5of5{
+    @include ratio(5, 5);
+  }
+}
+
+///xxlg
+@media only screen and (min-width: $xtra-xtra-large-screen-width+1px){
+  .o-xxlg-c0of5{
+    @include o(0, 5);
+  }
+  .o-xxlg-c1of5{
+    @include o(1, 5);
+  }
+  .o-xxlg-c2of5{
+    @include o(2, 5);
+  }
+  .o-xxlg-c3of5{
+    @include o(3, 5);
+  }
+  .o-xxlg-c4of5{
+    @include o(4, 5);
+  }
+  .o-xxlg-c5of5{
+    @include o(5, 5);
+  }
+  
+  //size
+  .xxlg-c0of5{
+    @include ratio(0, 5);
+  }
+  .xxlg-c1of5{
+    @include ratio(1, 5);
+  }
+  .xxlg-c2of5{
+    @include ratio(2, 5);
+  }
+  .xxlg-c3of5{
+    @include ratio(3, 5);
+  }
+  .xxlg-c4of5{
+    @include ratio(4, 5);
+  }
+  .xxlg-c5of5{
+    @include ratio(5, 5);
+  }
+}

@@ -1,0 +1,688 @@
+@import "./../var.grid";
+@import "./../mixins/mixin.grid";
+
+
+
+// || > 0px && < 332 => xxsm
+@media only screen and (max-width: $xtra-small-screen-width){
+  .xxsm-h-100{
+    height: 100px;
+  }
+
+  .xxsm-h-200{
+    height: 200px;
+  }
+
+  .xxsm-h-300{
+    height: 300px;
+  }
+
+  .xxsm-h-400{
+    height: 400px;
+  }
+
+  .xxsm-h-500{
+    height: 500px;
+  }
+
+  .xxsm-w-100{
+    width: 100px;
+  }
+
+  .xxsm-w-200{
+    width: 200px;
+  }
+
+  .xxsm-w-300{
+    width: 300px;
+  }
+
+  .xxsm-w-400{
+    width: 400px;
+  }
+
+  .xxsm-w-500{
+    width: 500px;
+  }
+
+  .xxsm-hw-10{
+    height: 10px;  
+    width: 10px;
+  }
+
+  .xxsm-hw-20{
+    height: 20px;  
+    width: 20px;
+  }
+
+  .xxsm-hw-30{
+    height: 30px;  
+    width: 30px;
+  }
+
+  .xxsm-hw-40{
+    height: 40px;  
+    width: 40px;
+  }
+
+  .xxsm-hw-50{
+    height: 50px;  
+    width: 50px;
+  }
+
+  .xxsm-hw-100{
+    height: 100px;  
+    width: 100px;
+  }
+
+  .xxsm-hw-200{
+    height: 200px;
+    width: 200px;
+  }
+
+  .xxsm-hw-300{
+    height: 300px;
+    width: 300px;
+  }
+
+  .xxsm-hw-400{
+    height: 400px;
+    width: 400px;
+  }
+
+  .xxsm-w-500{
+    height: 500px;
+    width: 500px;
+  }
+}
+
+// || > 333px && < 480 => xsm
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  .xsm-h-100{
+    height: 100px;
+  }
+
+  .xsm-h-150{
+    height: 150px;
+  }
+
+  .xsm-h-200{
+    height: 200px;
+  }
+
+  .xsm-h-300{
+    height: 300px;
+  }
+
+  .xsm-h-400{
+    height: 400px;
+  }
+
+  .xsm-h-500{
+    height: 500px;
+  }
+
+  .xsm-w-100{
+    width: 100px;
+  }
+
+  .xsm-w-200{
+    width: 200px;
+  }
+
+  .xsm-w-300{
+    width: 300px;
+  }
+
+  .xsm-w-400{
+    width: 400px;
+  }
+
+  .xsm-w-500{
+    width: 500px;
+  }
+
+  .xsm-hw-10{
+    height: 10px;  
+    width: 10px;
+  }
+
+  .xsm-hw-20{
+    height: 20px;  
+    width: 20px;
+  }
+
+  .xsm-hw-30{
+    height: 30px;  
+    width: 30px;
+  }
+
+  .xsm-hw-40{
+    height: 40px;  
+    width: 40px;
+  }
+
+  .xsm-hw-50{
+    height: 50px;  
+    width: 50px;
+  }
+
+  .xsm-hw-100{
+    height: 100px;  
+    width: 100px;
+  }
+
+  .xsm-hw-200{
+    height: 200px;
+    width: 200px;
+  }
+
+  .xsm-hw-300{
+    height: 300px;
+    width: 300px;
+  }
+
+  .xsm-hw-400{
+    height: 400px;
+    width: 400px;
+  }
+
+  .xsm-hw-500{
+    height: 500px;
+    width: 500px;
+  }
+}
+
+// || > 481px && < 768 => sm
+@media only screen and (min-width: $small-screen-width+1px){
+  .sm-h-100{
+    height: 100px;
+  }
+
+  .sm-h-200{
+    height: 200px;
+  }
+
+  .sm-h-300{
+    height: 300px;
+  }
+
+  .sm-h-400{
+    height: 400px;
+  }
+
+  .sm-h-500{
+    height: 500px;
+  }
+
+  .sm-w-100{
+    width: 100px;
+  }
+
+  .sm-w-200{
+    width: 200px;
+  }
+
+  .sm-w-300{
+    width: 300px;
+  }
+
+  .sm-w-400{
+    width: 400px;
+  }
+
+  .sm-w-500{
+    width: 500px;
+  }
+
+  .sm-hw-10{
+    height: 10px;  
+    width: 10px;
+  }
+
+  .sm-hw-20{
+    height: 20px;  
+    width: 20px;
+  }
+
+  .sm-hw-30{
+    height: 30px;  
+    width: 30px;
+  }
+
+  .sm-hw-40{
+    height: 40px;  
+    width: 40px;
+  }
+
+  .sm-hw-50{
+    height: 50px;  
+    width: 50px;
+  }
+
+  .sm-hw-100{
+    height: 100px;  
+    width: 100px;
+  }
+
+  .sm-hw-200{
+    height: 200px;
+    width: 200px;
+  }
+
+  .sm-hw-300{
+    height: 300px;
+    width: 300px;
+  }
+
+  .sm-hw-400{
+    height: 400px;
+    width: 400px;
+  }
+
+  .sm-hw-500{
+    height: 500px;
+    width: 500px;
+  } 
+}
+
+// || > 481px && < 768 => md
+@media only screen and (min-width: $medium-screen-width+1px){
+.md-h-100 {
+  height: 100px;
+}
+
+.md-h-200 {
+  height: 200px;
+}
+
+.md-h-300 {
+  height: 300px;
+}
+
+.md-h-400 {
+  height: 400px;
+}
+
+.md-h-500 {
+  height: 500px;
+}
+
+.md-w-100 {
+  width: 100px;
+}
+
+.md-w-200 {
+  width: 200px;
+}
+
+.md-w-300 {
+  width: 300px;
+}
+
+.md-w-400 {
+  width: 400px;
+}
+
+.md-w-500 {
+  width: 500px;
+}
+
+.md-hw-10 {
+  height: 10px;
+  width: 10px;
+}
+
+.md-hw-20 {
+  height: 20px;
+  width: 20px;
+}
+
+.md-hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+.md-hw-40 {
+  height: 40px;
+  width: 40px;
+}
+
+.md-hw-50 {
+  height: 50px;
+  width: 50px;
+}
+
+.md-hw-100 {
+  height: 100px;
+  width: 100px;
+}
+
+.md-hw-200 {
+  height: 200px;
+  width: 200px;
+}
+
+.md-hw-300 {
+  height: 300px;
+  width: 300px;
+}
+
+.md-hw-400 {
+  height: 400px;
+  width: 400px;
+}
+
+.md-hw-500 {
+  height: 500px;
+  width: 500px;
+}
+
+}
+
+//
+// || > 993px && <1200 => lg
+@media only screen and (min-width: $large-screen-width+1px){
+.lg-h-100 {
+  height: 100px;
+}
+
+.lg-h-200 {
+  height: 200px;
+}
+
+.lg-h-300 {
+  height: 300px;
+}
+
+.lg-h-400 {
+  height: 400px;
+}
+
+.lg-h-500 {
+  height: 500px;
+}
+
+.lg-w-100 {
+  width: 100px;
+}
+
+.lg-w-200 {
+  width: 200px;
+}
+
+.lg-w-300 {
+  width: 300px;
+}
+
+.lg-w-400 {
+  width: 400px;
+}
+
+.lg-w-500 {
+  width: 500px;
+}
+
+.lg-hw-10 {
+  height: 10px;
+  width: 10px;
+}
+
+.lg-hw-20 {
+  height: 20px;
+  width: 20px;
+}
+
+.lg-hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+.lg-hw-40 {
+  height: 40px;
+  width: 40px;
+}
+
+.lg-hw-50 {
+  height: 50px;
+  width: 50px;
+}
+
+.lg-hw-100 {
+  height: 100px;
+  width: 100px;
+}
+
+.lg-hw-200 {
+  height: 200px;
+  width: 200px;
+}
+
+.lg-hw-300 {
+  height: 300px;
+  width: 300px;
+}
+
+.lg-hw-400 {
+  height: 400px;
+  width: 400px;
+}
+
+.lg-hw-500 {
+  height: 500px;
+  width: 500px;
+}
+
+}
+
+// || > 1201px && <1600 => xlg
+@media only screen and (min-width: $xtra-large-screen-width){ 
+/* line 3, ../../sass/helpers/@temp.scss */
+.xlg-h-100 {
+  height: 100px;
+}
+
+/* line 7, ../../sass/helpers/@temp.scss */
+.xlg-h-200 {
+  height: 200px;
+}
+
+/* line 11, ../../sass/helpers/@temp.scss */
+.xlg-h-300 {
+  height: 300px;
+}
+
+/* line 15, ../../sass/helpers/@temp.scss */
+.xlg-h-400 {
+  height: 400px;
+}
+
+/* line 19, ../../sass/helpers/@temp.scss */
+.xlg-h-500 {
+  height: 500px;
+}
+
+/* line 23, ../../sass/helpers/@temp.scss */
+.xlg-w-100 {
+  width: 100px;
+}
+
+/* line 27, ../../sass/helpers/@temp.scss */
+.xlg-w-200 {
+  width: 200px;
+}
+
+/* line 31, ../../sass/helpers/@temp.scss */
+.xlg-w-300 {
+  width: 300px;
+}
+
+/* line 35, ../../sass/helpers/@temp.scss */
+.xlg-w-400 {
+  width: 400px;
+}
+
+/* line 39, ../../sass/helpers/@temp.scss */
+.xlg-w-500 {
+  width: 500px;
+}
+
+/* line 43, ../../sass/helpers/@temp.scss */
+.xlg-hw-10 {
+  height: 10px;
+  width: 10px;
+}
+
+/* line 48, ../../sass/helpers/@temp.scss */
+.xlg-hw-20 {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 53, ../../sass/helpers/@temp.scss */
+.xlg-hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+/* line 58, ../../sass/helpers/@temp.scss */
+.xlg-hw-40 {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 63, ../../sass/helpers/@temp.scss */
+.xlg-hw-50 {
+  height: 50px;
+  width: 50px;
+}
+
+/* line 68, ../../sass/helpers/@temp.scss */
+.xlg-hw-100 {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 73, ../../sass/helpers/@temp.scss */
+.xlg-hw-200 {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 78, ../../sass/helpers/@temp.scss */
+.xlg-hw-300 {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 83, ../../sass/helpers/@temp.scss */
+.xlg-hw-400 {
+  height: 400px;
+  width: 400px;
+}
+
+/* line 88, ../../sass/helpers/@temp.scss */
+.xlg-hw-500 {
+  height: 500px;
+  width: 500px;
+}
+
+}
+
+ // || > 1601px => xxlg
+@media only screen and (min-width: $xtra-xtra-large-screen-width+1px){
+.xxlg-h-100 {
+  height: 100px;
+}
+
+.xxlg-h-200 {
+  height: 200px;
+}
+
+.xxlg-h-300 {
+  height: 300px;
+}
+
+.xxlg-h-400 {
+  height: 400px;
+}
+
+.xxlg-h-500 {
+  height: 500px;
+}
+
+.xxlg-w-100 {
+  width: 100px;
+}
+
+.xxlg-w-200 {
+  width: 200px;
+}
+
+.xxlg-w-300 {
+  width: 300px;
+}
+
+.xxlg-w-400 {
+  width: 400px;
+}
+
+.xxlg-w-500 {
+  width: 500px;
+}
+
+.xxlg-hw-10 {
+  height: 10px;
+  width: 10px;
+}
+
+.xxlg-hw-20 {
+  height: 20px;
+  width: 20px;
+}
+
+.xxlg-hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+.xxlg-hw-40 {
+  height: 40px;
+  width: 40px;
+}
+
+.xxlg-hw-50 {
+  height: 50px;
+  width: 50px;
+}
+
+.xxlg-hw-100 {
+  height: 100px;
+  width: 100px;
+}
+
+.xxlg-hw-200 {
+  height: 200px;
+  width: 200px;
+}
+
+.xxlg-hw-300 {
+  height: 300px;
+  width: 300px;
+}
+
+.xxlg-hw-400 {
+  height: 400px;
+  width: 400px;
+}
+
+.xxlg-hw-500 {
+  height: 500px;
+  width: 500px;
+}
+
+}
+
+
+
+

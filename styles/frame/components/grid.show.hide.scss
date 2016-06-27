@@ -1,0 +1,42 @@
+@import "var.grid";
+
+.hide{
+  display: none;
+}
+
+
+// || < 332px
+@media only screen and (max-width: $small-screen-width){
+  .xxsm-hide{
+    display: none;
+  }
+}
+
+// || < 480px
+@media only screen and (max-width: $small-screen-width){
+.xsm-hide{
+    display: none;
+  }
+}
+
+//
+// || < 768px
+@media only screen and (max-width: $medium-screen-width){
+.sm-hide{
+    display: none;
+  }
+}
+
+// || < 992px
+@media only screen and (max-width: $large-screen-width){ 
+.md-hide{
+    display: none;
+  }
+}
+
+ // || <1200 px => 
+@media only screen and (max-width: $xtra-large-screen-width){
+.lg-hide{
+    display: none;
+  }
+}

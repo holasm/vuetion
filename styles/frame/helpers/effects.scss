@@ -1,0 +1,13 @@
+.btn-effect-1{
+  &:hover{
+    cursor: pointer;
+    background: #e3e3e3;
+  }
+
+  &:active{
+    cursor: pointer;
+    background: #aaa;
+  }
+
+  -webkit-user-select: none;
+}

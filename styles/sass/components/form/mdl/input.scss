@@ -1,0 +1,73 @@
+.mdl-form{
+  .form-group{
+    position: relative;
+    margin-bottom: 16px;
+
+    input.form-control:focus::-webkit-input-placeholder {
+       display: none;
+       opacity: 0;
+    }
+    input.form-control{
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 1.3em;
+      padding: 12px 12px;
+      max-height: 45px;
+      height: 40px;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #e3e3e3;
+      // margin-top: 0px;
+      width: 100%;
+      
+      &:hover, {
+        border: none;
+      border-bottom: 2px solid #ccc;
+      }
+      &:focus{
+        border: none;
+        border-bottom: 2px solid teal;
+
+        // :-moz-placeholder { /* Firefox 18- */
+        //    color: red;  
+        // }
+
+        // ::-moz-placeholder {  /* Firefox 19+ */
+        //    color: red;  
+        // }
+
+        // :-ms-input-placeholder {  
+        //    color: red;  
+        // }
+      }
+    }// ./form-group
+
+    label{
+      padding: 4px 10px;
+      display: inline-block;
+      font-size: 0.95em;
+
+      &.error{
+        color: red;
+      }
+    }
+    
+    input[type=password]:valid{
+      letter-spacing: 3px;
+    }
+    
+    &.error{
+      input{
+        border: 1px solid red;
+        &:hover, {
+          box-shadow: none;
+          border: 1px solid red;
+        }
+        &:focus{
+          box-shadow: none;
+          border: 1px solid crimson;
+        }
+      }
+    }
+  } 
+}

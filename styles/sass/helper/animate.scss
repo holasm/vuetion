@@ -1,0 +1,86 @@
+.tr-background-300{
+  transition: background 0.3s linear;
+  
+  &:hover{
+    transition: background 0.3s linear;
+  }
+}
+
+.anim{
+  background: #e0e0e0;
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+    background: #e3e3e3;
+  }
+
+  &:active{
+    cursor: pointer;
+    background: #aaa;
+    animation: left .3s linear .3s infinite alternate;
+  }
+
+  -webkit-user-select: none;
+}
+
+@-webkit-keyframes left {
+  0% {
+    left:0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+// animation: name duration timing-function delay iteration-count direction fill-mode;
+
+.side-nav{
+  position: relative;
+  // left: 100%;
+}
+
+.puex1:hover{
+  animation: move-right-100 .3s linear forwards;
+  
+  &:target{
+    animation: move-right-100 .3s linear forwards;  
+  }
+}
+
+
+
+.move-left-100{
+  animation: move-left-100 .3s linear forwards;
+}
+.move-right-100{
+  animation: move-right-100 .3s linear forwards;
+}
+
+@-webkit-keyframes move-left-100 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes move-right-100 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,85 @@
+$max-height-subject: 36px;
+$max-height-support: 20px;
+$content-padding: 8px;
+
+.card{
+  position: relative;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  
+  .media{
+    // width: inherit;
+    height: inherit;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .support{
+      padding: 16px;
+      font-family: roboto-r;
+      font-size: .8em;
+    }
+  }
+
+  .content-media{
+    width: 100%; //###
+    // height: 130px; //###
+    background: white;
+    box-sizing: border-box;
+    padding: 8px; //###
+    text-align: center;
+
+    img{
+      position: relative;
+      height: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .content{
+    box-sizing: border-box;
+    border-top: 1px solid #e3e3e3;
+    padding: $content-padding;
+    background: white;
+    
+    .subject{
+      width: 100%;
+      box-sizing: border-box;
+      font-family: roboto-r;
+      line-height: 18px;
+      font-size: 0.9em;
+
+      //for max two line
+      height: $max-height-subject; //###
+      overflow: hidden;
+
+      &:hover{
+        color: #007D6B;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    .support { 
+      box-sizing: border-box;
+      padding-top: 8px;
+      // padding-bottom: 8px;
+      font-family: roboto-r;
+      font-size: 0.7em;
+      max-height: $max-height-support; //###
+      overflow: hidden;
+
+      &:hover{
+        color: #007D6B;
+        cursor: pointer;
+      }
+     } 
+  }
+
+  .action{
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 8px;
+  }
+}

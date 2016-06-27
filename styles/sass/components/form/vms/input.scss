@@ -1,0 +1,56 @@
+.vms-form{
+  .form-group{
+    position: relative;
+    margin-bottom: 16px;
+
+    input.form-control{
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 1.3em;
+      padding: 12px 12px;
+      max-height: 45px;
+      height: 40px;
+      outline: none;
+      border: 1px solid #e3e3e3;
+      // margin-top: 0px;
+      width: 100%;
+      
+      &:hover, {
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+      &:focus{
+        box-shadow: none;
+        border: 1px solid #136CCA;
+      }
+    }// ./form-group
+
+    label{
+      padding: 4px 10px;
+      display: inline-block;
+      font-size: 0.95em;
+
+      &.error{
+        color: red;
+      }
+    }
+    
+    input[type=password]:valid{
+      letter-spacing: 3px;
+    }
+    
+    &.error{
+      input{
+        border: 1px solid red;
+        &:hover, {
+          box-shadow: none;
+          border: 1px solid red;
+        }
+        &:focus{
+          box-shadow: none;
+          border: 1px solid crimson;
+        }
+      }
+    }
+  } 
+}

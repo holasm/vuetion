@@ -1,0 +1,48 @@
+$font-h1: 3.5em;
+$font-h6:1em;
+
+@mixin interpolate-font-size( $item, $max: $font-h1, $min: $font-h6 ){
+  font-size: $min + (($max - $min) / 6) * $item;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: roboto-r;
+}
+
+// .h1, .h2, .h3, .h4, .h5, .h6, .h7{
+//   border: 1px solid;
+// }
+
+h1{
+  padding: 16px 0;
+  @include interpolate-font-size(6);
+}
+
+h2{
+  padding: 12px 0;
+  @include interpolate-font-size(5);
+}
+h3{
+  padding: 8px 0;
+  @include interpolate-font-size(4);
+}
+
+h4{
+  padding: 8px 0;
+  @include interpolate-font-size(2.5);
+}
+
+h5{
+  padding: 8px 0;
+  @include interpolate-font-size(2);
+}
+
+h6{
+  padding: 8px 0;
+  @include interpolate-font-size(1);
+}
+
+.h7{
+  padding: 8px 0;
+  @include interpolate-font-size(0);
+}

@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+.btn{
+  box-sizing: border-box;
+  display: inline-block;
+  -webkit-user-select: none; 
+  text-align: center;
+  cursor: pointer;
+  //btn size specific
+  font-size: .95em;
+  line-height: 16px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  background-color: #e3e3e3;
+  border-radius: 2px;
+  border: 1px solid #ccc; 
+  text-decoration: none;
+  transition: border .3s linear;
+  
+  &:hover, &.hover{
+    border: 1px solid #a1a1a1;
+    transition: border .3s linear;    
+  }  
+
+  &:active, &.active{
+    //
+    background: #d0d0d0;
+    transition: border .05s linear;    
+  }
+  
+  i{
+    line-height: 16px;
+    font-size: 1.5em;
+  }
+
+  .icon.left {
+    padding-right: 0px;
+  }
+
+  .icon.right {
+    padding-left: 0px;
+  }
+}
+
+.btn{
+  &.primary{
+    background: #1583cc;
+    color: white;
+
+    &:active, &.active{
+      background: #1378bb;
+    }
+  }
+  &.success{
+    background: #3adb76;
+    color: white;
+
+    &:active, &.active{
+      background: #22bb5b;
+    }
+  }
+  &.delete{
+    background: crimson;
+    color: white;
+
+    &:active, &.active{
+      background: #c11031;
+    }
+  }
+}
+
+.btn-sm{
+  //btn size specific
+  font-size: .8em;
+  line-height: 12px;
+  padding: 6px 12px;
+
+  i{
+    font-size: 1.3em;
+  }
+}
+
+.btn-lg{
+  //btn size specific
+  font-size: 1.2em;
+  line-height: 26px;
+  padding: 8px 28px;
+
+  i{
+    font-size: 2em;
+  }
+
+  .icon.left {
+    padding-right: 8px;
+  }
+
+  .icon.right {
+    padding-left: 8px;
+  }
+}

@@ -1,0 +1,248 @@
+@import "var.grid";
+$nav-height: 50px;
+$title-left-extrapad: 30px;
+
+.dib{
+  width: 100%;
+}
+.nav-layout, .nav-row{
+  overflow: hidden;
+}
+
+.nav{
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+  .title{
+    box-sizing: border-box;
+    height: $nav-height;
+    float: left;
+    z-index: 3;
+
+    h6{
+      display: inline-block;
+      line-height: $nav-height;
+
+      &:hover{
+        color: green;
+        cursor: pointer;
+      }
+    }
+
+    .hambarger-icon{
+      float: left;
+      line-height: 50px;
+      padding: 0 12px;
+      
+      &:hover{
+        cursor: pointer;
+        color: green;
+      }
+    }
+  }
+
+  .search{
+    position: absolute;
+    height: $nav-height;
+    box-sizing: border-box;
+    float: left;
+    z-index: 2;
+    // overflow: visible;
+
+  .search-form{
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    overflow: visible;
+
+    .search-icon{
+      display: inline;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 99.8%;
+      transform: translate(-100%, -50%);
+      padding-right: 8px;
+      padding-left: 4px;
+      background: white;
+     
+    }
+
+    .form-item input{
+      padding: 6px 6px;
+      font-size: 16px;
+      display: inline-block;
+      box-sizing: border-box;
+      z-index: 0;
+    }
+
+    .search-hint{
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      z-index: 10;
+      top: 100%;
+      
+      .list-item{
+        background: white;
+        transition: background 0.3s linear;
+
+      }
+
+      .list-item:hover, .active{
+        background: #e3e3e3;
+        cursor: pointer;
+        transition: background 0.3s linear;
+      }
+
+    }
+
+  }
+
+  }
+
+
+  .links{
+    box-sizing: border-box;
+    position: relative;
+    height: $nav-height;
+    z-index: -1;
+
+    ul{
+      position: absolute;
+      overflow: hidden;
+      height: $nav-height;
+      right: 0;
+
+      li{
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        line-height: $nav-height - 3px;
+        padding: 0px 20px;
+        cursor: pointer;
+      }
+
+      li:hover, li.active{
+        background: #e3e3e3;
+        border-bottom: 6px solid blue;
+      }
+
+      li.user{
+        padding: 0;
+        padding-right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover{
+          background: none;
+          border-bottom: none;
+
+          .icon{
+            color: #aaa;
+          }
+        }
+        .user.cir{
+          background: #e3e3e3;
+        }
+
+        .icon{
+          position: absolute;
+          color: #e3e3e3;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 65%;
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: $xtra-small-screen-width){
+  .title{
+    width: 50%;
+
+    h6{
+      padding: 0;
+    }
+  }
+  
+  .search{
+    width: 50%;
+    left: 50%;
+  }
+  .hambarger-icon{
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  .title{
+    width: 50%;
+    h6{
+      padding: 0;
+    }
+  }
+  
+  .search{
+    width: 50%;
+  }
+
+  .hambarger-icon{
+    display: inline;
+  }
+}
+// => md
+@media only screen and (min-width: $small-screen-width+1px){
+  .title{
+    width: 50%;
+  }
+  
+  .search{
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: $medium-screen-width+1px){
+  .title{
+    width: 50%;
+  }
+  
+  .search{
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: $large-screen-width+1px){
+  .title{
+    width: 150px;
+    h6{
+      padding: 0 16px;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+  
+  .search{
+    width: 45%;
+    left: 150px;
+  }
+
+  .hambarger-icon{
+    display: none;
+  }
+
+  .nav-layout, .nav-row{
+    overflow: visible;
+  }
+}
+
+@media only screen and (min-width: $xtra-large-screen-width){  
+}

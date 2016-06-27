@@ -1,0 +1,16 @@
+@import "layout/_index";
+@import "components/_index";
+@import "helper/_index";
+@import "util/_index";
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  font-family: Helvetica;
+}
+.container{
+  // background: red;
+  height: 100px;
+}

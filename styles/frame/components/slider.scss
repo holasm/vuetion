@@ -1,0 +1,38 @@
+.row.books.books-slider{  
+  width: 100%;
+  height: inherit;
+}
+.slide-item{
+  position: absolute;   
+}
+
+.slide-item-1{
+  left: -100%;
+}
+
+.slide-item-2{
+  left: 0%;
+}
+
+.slide-item-3{
+  position: absolute;
+  left: 100%;
+}
+
+.content-box{
+  overflow: hidden;
+}
+
+.slider-head{
+  .details{
+    a{
+      text-decoration: none;
+      font-size: 0.85em;
+      
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

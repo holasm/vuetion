@@ -1,0 +1,16 @@
+@mixin ratio($val: 1, $of: 12){
+  width: ($val / $of) * 100%;
+}
+
+@mixin o($val: 1, $of: 12){
+  margin-left: ($val / $of) * 100%;
+}
+
+@mixin grid-col{
+  // float: left;
+  padding: 0 $col-lr-padding;
+}
+
+@mixin horizontal-middle{
+  margin: 0 auto;
+}

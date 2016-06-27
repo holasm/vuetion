@@ -1,0 +1,151 @@
+@import "var.grid";
+
+$card-media-height-xxsm:  150px;
+$card-media-height-xsm:   130px;
+$card-media-height-sm:    130px;
+$card-media-height-md:    150px;
+$card-media-height-lg:    180px;
+$card-media-height-xlg:   190px;
+$card-media-height-xxlg:  250px;
+
+$max-height-subject: 36px;
+$max-height-support: 20px;
+$content-padding :8px;
+
+$book-card-height-xxsm:   inherit;
+$book-card-height-xsm:    inherit;
+$book-card-height-sm:     inherit;
+$book-card-height-md:     inherit;
+$book-card-height-lg:     inherit;
+$book-card-height-xlg:    inherit;
+$book-card-height-xxlg:   inherit;
+
+@mixin max-content-box-height($content-media-height){
+  height: $content-media-height + $max-height-subject + $max-height-support + 2 * $content-padding + 3px;
+}
+
+// || > 0px && < 332
+@media only screen and (max-width: $xtra-small-screen-width){
+  .content-media{
+    height: $card-media-height-xxsm;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-xxsm);
+  }
+}
+
+// || > 333px && < 480
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  .content-media{
+    height: $card-media-height-xsm;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-xsm);
+  }
+}
+
+// || > 481px && < 768 =>sm
+@media only screen and (min-width: $small-screen-width+1px){
+  .content-media{
+    height: $card-media-height-sm;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-sm);
+  }
+}
+
+// || > 481px && < 768 => md
+@media only screen and (min-width: $medium-screen-width+1px){
+  .content-media{
+    height: $card-media-height-md;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-md);
+  }
+
+  .left, .right{
+    height: $book-card-height-md;
+  }
+}
+
+//
+// || > 993px && <1200 => lg
+@media only screen and (min-width: $large-screen-width+1px){
+  .content-media{
+    height: $card-media-height-lg;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-lg);
+  }
+}
+
+// || > 1201px && <1600
+@media only screen and (min-width: $xtra-large-screen-width){ 
+  .content-media{
+    height: $card-media-height-xlg;
+  }
+
+  .content-box.books{
+    @include max-content-box-height($card-media-height-xlg);
+  }
+  .left, .right{
+    height: $book-card-height-xlg;
+  }
+}
+ // || > 1601px
+@media only screen and (min-width: $xtra-xtra-large-screen-width+1px){
+  .content-media{
+    height: $card-media-height-xxlg;
+  }
+  .content-box.books{
+    @include max-content-box-height($card-media-height-xxlg);
+  }  
+  .left, .right{
+    height: $book-card-height-xxlg;
+  }
+}
+
+
+@media only screen and (min-width: 480px){
+
+  .book.list{
+    width: calc(100% - 2*25px);
+  }
+
+  
+
+  
+  .left{
+    // background: green;
+    // height: $book-card-height;
+    width: 25px;
+    // position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    
+    .cir{
+      // margin-left: 8px;  
+    }
+  }  
+
+  .right{
+    float: left;
+    // background: green;
+    // height: $book-card-height;
+    width: 25px;
+    // position: absolute;
+    top: 0;
+    right: 0;
+
+    .cir{
+      right: 0;
+      // margin-right: 8px;
+    }
+  }
+}

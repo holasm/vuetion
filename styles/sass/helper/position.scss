@@ -1,0 +1,79 @@
+.r-0{
+  right: 0;
+}
+.ra-0{
+  position: absolute;
+  right: 0;
+}
+
+.b-0{
+  bottom: 0;
+}
+.ba-0{
+  position: absolute;
+  bottom: 0;
+}
+
+.tac{
+  text-align: center;
+}
+
+.pull-right{
+  position: absolute;
+  right: 0;
+}
+
+.pull-left{
+  position: absolute;
+  right: 0;
+}
+
+.vm-align{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  overflow: hidden;
+  z-index: 3;
+}
+
+.hm-align{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  overflow: hidden;
+  z-index: 3;
+}
+
+.vhm-align{
+  position: absolute;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  overflow: hidden;
+  z-index: 3;
+}
+
+.mid-h{
+  margin: 0 auto;
+}
+
+.pr{
+  position: relative;
+}
+
+.image{
+  position: relative;
+  height: inherit;
+  width: inherit;
+  text-align: center;
+  z-index: 2;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

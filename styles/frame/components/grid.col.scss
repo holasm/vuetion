@@ -1,0 +1,744 @@
+@import "var.grid";
+
+*{
+  box-sizing: border-box;
+}
+
+.row{
+  padding: 0 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.col{
+  position: relative;
+  padding: 0 8px;
+  float: left;
+  width: 100%;
+  // background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.c1{
+  @include ratio(1, 12);
+  @include grid-col;
+}
+.c2{
+  @include ratio(2, 12);
+  @include grid-col;
+}
+.c3{
+  @include ratio(3, 12);
+  @include grid-col;
+}
+.c4{
+  @include ratio(4, 12);
+  @include grid-col;
+}
+.c5{
+  @include ratio(5, 12);
+  @include grid-col;
+}
+.c6{
+  @include ratio(6, 12);
+  @include grid-col;
+}
+.c7{
+  @include ratio(7, 12);
+  @include grid-col;
+}
+.c8{
+  @include ratio(8, 12);
+  @include grid-col;
+}
+.c9{
+  @include ratio(9, 12);
+  @include grid-col;
+}
+.c10{
+  @include ratio(10, 12);
+  @include grid-col;
+}
+.c11{
+  @include ratio(11, 12);
+  @include grid-col;
+}
+.c12{
+  @include ratio(12, 12);
+  @include grid-col;
+}
+
+//xxm
+@media only screen and (max-width: $xtra-small-screen-width){
+  //offset
+  .o-xxsm-c0{
+    @include o(0, 12);
+  }
+  .o-xxsm-c1{
+    @include o(1, 12);
+  }
+  .o-xxsm-c2{
+    @include o(2, 12);
+  }
+  .o-xxsm-c3{
+    @include o(3, 12);
+  }
+  .o-xxsm-c4{
+    @include o(4, 12);
+  }
+  .o-xxsm-c5{
+    @include o(5, 12);
+  }
+  .o-xxsm-c6{
+    @include o(6, 12);
+  }
+  .o-xxsm-c7{
+    @include o(7, 12);
+  }
+  .o-xxsm-c8{
+    @include o(8, 12);
+  }
+  .o-xxsm-c9{
+    @include o(9, 12);
+  }
+  .o-xxsm-c10{
+    @include o(10, 12);
+  }
+  .o-xxsm-c11{
+    @include o(11, 12);
+  }
+  .o-xxsm-c12{
+    @include o(12, 12);
+  }
+  
+  //size
+  .xxsm-c1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xxsm-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xxsm-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xxsm-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xxsm-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xxsm-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xxsm-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xxsm-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xxsm-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xxsm-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xxsm-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xxsm-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//xm
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  
+  //offsets
+  .o-xsm-c0{
+    @include o(0, 12);
+  }
+
+  .o-xsm-c1{
+    @include o(1, 12);
+  }
+  .o-xsm-c2{
+    @include o(2, 12);
+  }
+  .o-xsm-c3{
+    @include o(3, 12);
+  }
+  .o-xsm-c4{
+    @include o(4, 12);
+  }
+  .o-xsm-c5{
+    @include o(5, 12);
+  }
+  .o-xsm-c6{
+    @include o(6, 12);
+  }
+  .o-xsm-c7{
+    @include o(7, 12);
+  }
+  .o-xsm-c8{
+    @include o(8, 12);
+  }
+  .o-xsm-c9{
+    @include o(9, 12);
+  }
+  .o-xsm-c10{
+    @include o(10, 12);
+  }
+  .o-xsm-c11{
+    @include o(11, 12);
+  }
+  .o-xsm-c12{
+    @include o(12, 12);
+  }
+  
+  //size
+  .xsm-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xsm-c1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xsm-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xsm-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xsm-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xsm-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xsm-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xsm-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xsm-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xsm-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xsm-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xsm-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xsm-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  } 
+}
+
+//sm
+@media only screen and (min-width: $small-screen-width+1px){
+
+  .o-sm-c0{
+    @include o(0, 12);
+  }
+  .o-sm-c1{
+    @include o(1, 12);
+  }
+  .o-sm-c2{
+    @include o(2, 12);
+  }
+  .o-sm-c3{
+    @include o(3, 12);
+  }
+  .o-sm-c4{
+    @include o(4, 12);
+  }
+  .o-sm-c5{
+    @include o(5, 12);
+  }
+  .o-sm-c6{
+    @include o(6, 12);
+  }
+  .o-sm-c7{
+    @include o(7, 12);
+  }
+  .o-sm-c8{
+    @include o(8, 12);
+  }
+  .o-sm-c9{
+    @include o(9, 12);
+  }
+  .o-sm-c10{
+    @include o(10, 12);
+  }
+  .o-sm-c11{
+    @include o(11, 12);
+  }
+  .o-sm-c12{
+    @include o(12, 12);
+  }
+  
+  //size
+
+  .sm-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .sm-c1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .sm-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .sm-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .sm-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .sm-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .sm-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .sm-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .sm-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .sm-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .sm-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .sm-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .sm-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//md
+@media only screen and (min-width: $medium-screen-width+1px){
+    
+  .o-md-c0{
+    @include o(0, 12);
+  }    
+  .o-md-c1{
+    @include o(1, 12);
+  }
+  .o-md-c2{
+    @include o(2, 12);
+  }
+  .o-md-c3{
+    @include o(3, 12);
+  }
+  .o-md-c4{
+    @include o(4, 12);
+  }
+  .o-md-c5{
+    @include o(5, 12);
+  }
+  .o-md-c6{
+    @include o(6, 12);
+  }
+  .o-md-c7{
+    @include o(7, 12);
+  }
+  .o-md-c8{
+    @include o(8, 12);
+  }
+  .o-md-c9{
+    @include o(9, 12);
+  }
+  .o-md-c10{
+    @include o(10, 12);
+  }
+  .o-md-c11{
+    @include o(11, 12);
+  }
+  .o-md-c12{
+    @include o(12, 12);
+  }
+  .md-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .md-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .md-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .md-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .md-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .md-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .md-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .md-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .md-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .md-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .md-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .md-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//lg
+@media only screen and (min-width: $large-screen-width+1px){
+  .o-lg-c0{
+    @include o(0, 12);
+  }
+  .o-lg-c1{
+    @include o(1, 12);
+  }
+  .o-lg-c2{
+    @include o(2, 12);
+  }
+  .o-lg-c3{
+    @include o(3, 12);
+  }
+  .o-lg-c4{
+    @include o(4, 12);
+  }
+  .o-lg-c5{
+    @include o(5, 12);
+  }
+  .o-lg-c6{
+    @include o(6, 12);
+  }
+  .o-lg-c7{
+    @include o(7, 12);
+  }
+  .o-lg-c8{
+    @include o(8, 12);
+  }
+  .o-lg-c9{
+    @include o(9, 12);
+  }
+  .o-lg-c10{
+    @include o(10, 12);
+  }
+  .o-lg-c11{
+    @include o(11, 12);
+  }
+  .o-lg-c12{
+    @include o(12, 12);
+  }
+
+  .lg-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .lg-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .lg-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .lg-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .lg-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .lg-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .lg-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .lg-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .lg-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .lg-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .lg-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .lg-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//xlg - xtra large screen
+@media only screen and (min-width: $xtra-large-screen-width+1px){
+  
+  //offset
+  .o-xlg-c0{
+    @include o(0, 12);
+  }
+  .o-xlg-c1{
+    @include o(1, 12);
+  }
+  .o-xlg-c2{
+    @include o(2, 12);
+  }
+  .o-xlg-c3{
+    @include o(3, 12);
+  }
+  .o-xlg-c4{
+    @include o(4, 12);
+  }
+  .o-xlg-c5{
+    @include o(5, 12);
+  }
+  .o-xlg-c6{
+    @include o(6, 12);
+  }
+  .o-xlg-c7{
+    @include o(7, 12);
+  }
+  .o-xlg-c8{
+    @include o(8, 12);
+  }
+  .o-xlg-c9{
+    @include o(9, 12);
+  }
+  .o-xlg-c10{
+    @include o(10, 12);
+  }
+  .o-xlg-c11{
+    @include o(11, 12);
+  }
+  .o-xlg-c12{
+    @include o(12, 12);
+  }
+  
+  //size
+  .xlg-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xlg-c1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xlg-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xlg-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xlg-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xlg-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xlg-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xlg-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xlg-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xlg-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xlg-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xlg-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xlg-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+///xxlg
+@media only screen and (min-width: $xtra-xtra-large-screen-width+1px){
+  
+  //offset
+  .o-xxlg-c0{
+    @include o(0, 12);
+  }
+  .o-xxlg-c1{
+    @include o(1, 12);
+  }
+  .o-xxlg-c2{
+    @include o(2, 12);
+  }
+  .o-xxlg-c3{
+    @include o(3, 12);
+  }
+  .o-xxlg-c4{
+    @include o(4, 12);
+  }
+  .o-xxlg-c5{
+    @include o(5, 12);
+  }
+  .o-xxlg-c6{
+    @include o(6, 12);
+  }
+  .o-xxlg-c7{
+    @include o(7, 12);
+  }
+  .o-xxlg-c8{
+    @include o(8, 12);
+  }
+  .o-xxlg-c9{
+    @include o(9, 12);
+  }
+  .o-xxlg-c10{
+    @include o(10, 12);
+  }
+  .o-xxlg-c11{
+    @include o(11, 12);
+  }
+  .o-xxlg-c12{
+    @include o(12, 12);
+  }
+  
+  //size
+  .xxlg-c1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xxlg-c1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xxlg-c2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xxlg-c3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xxlg-c4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xxlg-c5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xxlg-c6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xxlg-c7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xxlg-c8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xxlg-c9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xxlg-c10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xxlg-c11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xxlg-c12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}

@@ -1,0 +1,68 @@
+// $left-box-width: 25px;
+// $optinal-ptb: 0px;
+// $vm-container-m: 8px;
+
+// .pub-8 {
+//   padding-top: $optinal-ptb;
+//   padding-bottom: $optinal-ptb;
+// }
+
+// .left-box, .right-box, .content-box{
+//   position: relative;
+//   box-sizing: border-box;
+//   float: left;
+  
+//   @extend .pub-8;
+// }
+
+// .left-box, .right-box{
+//   width: $left-box-width;
+//   z-index: 2;
+
+//   .cir{
+//     &:hover{
+//       cursor: pointer;
+//       background: #e3e3e3;
+//     }
+
+//     &:active{
+//       cursor: pointer;
+//       background: #aaa;
+//     }
+
+//   }
+
+// }
+
+// .left-box .vm-container{
+//   margin-left: $vm-container-m;
+// }
+
+// .right-box .vm-container{
+//   right: 0px;
+//   margin-right: $vm-container-m;
+// }
+
+// .content-box{
+//   position: relative;
+//   width: calc(100% - 2 * #{$left-box-width} );
+//   box-sizing: border-box;
+//   // height: 300px;
+//   z-index: 1;
+// }
+
+// .content-slider{
+//   position: relative;
+//   width: 100%;
+//   height: inherit;
+//   overflow: hidden;
+//   background: yellow;
+// }
+
+// // .item{
+// //   position: absolute;
+// //   display: inline;
+// //   width: inherit;
+// //   height: inherit;
+// //   background: crimson;
+// // }

@@ -1,0 +1,406 @@
+@import "./../variables/grid.col";
+@import "./../mixins/grid.col";
+
+*{
+  box-sizing: border-box;
+}
+
+.row{
+  padding: 0 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.col{
+  position: relative;
+  padding: 0 8px;
+  float: left;
+  width: 100%;
+  // background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+//xxm < 332
+@media only screen and (max-width: $xs-width){
+  //size
+  .xxs-1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xxs-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xxs-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xxs-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xxs-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xxs-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xxs-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xxs-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xxs-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xxs-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xxs-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xxs-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//xm < 480
+@media only screen and (min-width: $xs-width+1px){
+  //size
+  .xs-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xs-1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xs-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xs-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xs-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xs-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xs-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xs-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xs-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xs-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xs-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xs-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xs-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  } 
+}
+
+//sm < 768
+@media only screen and (min-width: $sm-width+1px){
+  //size
+  .sm-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .sm-1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .sm-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .sm-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .sm-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .sm-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .sm-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .sm-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .sm-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .sm-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .sm-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .sm-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .sm-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//md
+@media only screen and (min-width: $md-width+1px){
+  .md-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .md-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .md-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .md-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .md-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .md-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .md-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .md-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .md-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .md-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .md-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .md-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//lg
+@media only screen and (min-width: $lg-width+1px){
+  .lg-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .lg-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .lg-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .lg-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .lg-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .lg-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .lg-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .lg-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .lg-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .lg-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .lg-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .lg-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+//xl - xtra large screen
+@media only screen and (min-width: $xl-width+1px){  
+  //size
+  .xl-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xl-1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xl-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xl-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xl-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xl-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xl-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xl-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xl-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xl-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xl-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xl-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xl-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}
+
+///xxl
+@media only screen and (min-width: $xxl-width+1px){
+  //size
+  .xxl-1{
+    @include grid-col;
+    @include ratio(1, 12);
+  }
+  .xxl-1{
+    @include ratio(1, 12);
+    @include grid-col;
+  }
+  .xxl-2{
+    @include ratio(2, 12);
+    @include grid-col;
+  }
+  .xxl-3{
+    @include ratio(3, 12);
+    @include grid-col;
+  }
+  .xxl-4{
+    @include ratio(4, 12);
+    @include grid-col;
+  }
+  .xxl-5{
+    @include ratio(5, 12);
+    @include grid-col;
+  }
+  .xxl-6{
+    @include ratio(6, 12);
+    @include grid-col;
+  }
+  .xxl-7{
+    @include ratio(7, 12);
+    @include grid-col;
+  }
+  .xxl-8{
+    @include ratio(8, 12);
+    @include grid-col;
+  }
+  .xxl-9{
+    @include ratio(9, 12);
+    @include grid-col;
+  }
+  .xxl-10{
+    @include ratio(10, 12);
+    @include grid-col;
+  }
+  .xxl-11{
+    @include ratio(11, 12);
+    @include grid-col;
+  }
+  .xxl-12{
+    @include ratio(12, 12);
+    @include grid-col;
+  }
+}

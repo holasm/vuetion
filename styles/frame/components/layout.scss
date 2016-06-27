@@ -1,0 +1,60 @@
+@import "var.grid";
+
+.layout{
+  @include horizontal-middle;
+  overflow: hidden;
+  // background: crimson;
+}
+
+// || > 0px && < 332 => xxsm
+@media only screen and (max-width: $xtra-small-screen-width){
+  .layout{
+    width: $xxsm-layout-width;
+  }
+}
+
+// || > 333px && < 480 => xsm
+@media only screen and (min-width: $xtra-small-screen-width+1px){
+  .layout{
+    width: $xsm-layout-width;
+  }
+}
+
+// || > 481px && < 768 => sm
+@media only screen and (min-width: $small-screen-width+1px){
+  .layout{
+    width: $sm-layout-width;
+  }  
+}
+
+// || > 481px && < 768 => md
+@media only screen and (min-width: $medium-screen-width+1px){
+  .layout{
+    width: $md-layout-width;
+  }
+}
+
+//
+// || > 993px && <1200 => lg
+@media only screen and (min-width: $large-screen-width+1px){
+  .layout{
+    width: $lg-layout-width;
+  }
+}
+
+// || > 1201px && <1600 => xlg
+@media only screen and (min-width: $xtra-large-screen-width){ 
+  .layout{
+    width: $xlg-layout-width;
+  } 
+}
+ // || > 1601px => xxlg
+@media only screen and (min-width: $xtra-xtra-large-screen-width+1px){
+  .layout{
+    width: $xxlg-layout-width;
+  } 
+}
+
+
+
+

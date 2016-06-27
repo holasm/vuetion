@@ -1,0 +1,94 @@
+@import "./../variables/grid.col";
+
+.hide{
+  display: none;
+}
+// || > 332px
+@media only screen and (min-width: $xs-width){
+  .xxs-hide-up{
+    display: none;
+  }
+}
+
+// || > 480px
+@media only screen and (min-width: $sm-width){
+.xs-hide-up{
+    display: none;
+  }
+}
+
+// || > 768px
+@media only screen and (min-width: $md-width){
+.sm-hide-up{
+    display: none;
+  }
+}
+
+//
+// || > 992px
+@media only screen and (min-width: $lg-width){
+.md-hide-up{
+    display: none;
+  }
+}
+
+// || > 1200px
+@media only screen and (min-width: $xl-width){ 
+.lg-hide-up{
+    display: none;
+  }
+}
+
+ // || >1600 px => 
+@media only screen and (min-width: $xxl-width){
+.xl-hide-up{
+    display: none;
+  }
+}
+
+/*
+ * ***********************************************************
+ *
+ */
+// || < 332px
+@media only screen and (max-width: $xs-width - 1px){
+  .xs-hide-down{
+    display: none;
+  }
+}
+
+// || < 480px
+@media only screen and (max-width: $sm-width - 1px){
+.sm-hide-down{
+    display: none;
+  }
+}
+
+// || < 768px
+@media only screen and (max-width: $md-width - 1px){
+.md-hide-down{
+    display: none;
+  }
+}
+
+//
+// || < 992px
+@media only screen and (max-width: $lg-width - 1px){
+.lg-hide-down{
+    display: none;
+  }
+}
+
+// || < 1200px
+@media only screen and (max-width: $xl-width - 1px){ 
+.xl-hide-down{
+    display: none;
+  }
+}
+
+ // || < 1600 px => 
+@media only screen and (max-width: $xxl-width - 1px){
+.xxl-hide-down{
+    display: none;
+  }
+}

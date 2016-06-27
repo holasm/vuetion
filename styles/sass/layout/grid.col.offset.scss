@@ -1,0 +1,314 @@
+@import "./../variables/grid.col";
+@import "./../mixins/grid.col";
+
+*{
+  box-sizing: border-box;
+}
+
+//xxm
+@media only screen and (max-width: $xs-width){
+  //offset
+  .o-xxs-0{
+    @include o(0, 12);
+  }
+  .o-xxs-1{
+    @include o(1, 12);
+  }
+  .o-xxs-2{
+    @include o(2, 12);
+  }
+  .o-xxs-3{
+    @include o(3, 12);
+  }
+  .o-xxs-4{
+    @include o(4, 12);
+  }
+  .o-xxs-5{
+    @include o(5, 12);
+  }
+  .o-xxs-6{
+    @include o(6, 12);
+  }
+  .o-xxs-7{
+    @include o(7, 12);
+  }
+  .o-xxs-8{
+    @include o(8, 12);
+  }
+  .o-xxs-9{
+    @include o(9, 12);
+  }
+  .o-xxs-10{
+    @include o(10, 12);
+  }
+  .o-xxs-11{
+    @include o(11, 12);
+  }
+  .o-xxs-12{
+    @include o(12, 12);
+  }
+}
+
+//xm
+@media only screen and (min-width: $xs-width+1px){
+  
+  //offsets
+  .o-xsm-0{
+    @include o(0, 12);
+  }
+
+  .o-xsm-1{
+    @include o(1, 12);
+  }
+  .o-xsm-2{
+    @include o(2, 12);
+  }
+  .o-xsm-3{
+    @include o(3, 12);
+  }
+  .o-xsm-4{
+    @include o(4, 12);
+  }
+  .o-xsm-5{
+    @include o(5, 12);
+  }
+  .o-xsm-6{
+    @include o(6, 12);
+  }
+  .o-xsm-7{
+    @include o(7, 12);
+  }
+  .o-xsm-8{
+    @include o(8, 12);
+  }
+  .o-xsm-9{
+    @include o(9, 12);
+  }
+  .o-xsm-10{
+    @include o(10, 12);
+  }
+  .o-xsm-11{
+    @include o(11, 12);
+  }
+  .o-xsm-12{
+    @include o(12, 12);
+  }
+}
+
+//sm
+@media only screen and (min-width: $sm-width+1px){
+
+  .o-sm-0{
+    @include o(0, 12);
+  }
+  .o-sm-1{
+    @include o(1, 12);
+  }
+  .o-sm-2{
+    @include o(2, 12);
+  }
+  .o-sm-3{
+    @include o(3, 12);
+  }
+  .o-sm-4{
+    @include o(4, 12);
+  }
+  .o-sm-5{
+    @include o(5, 12);
+  }
+  .o-sm-6{
+    @include o(6, 12);
+  }
+  .o-sm-7{
+    @include o(7, 12);
+  }
+  .o-sm-8{
+    @include o(8, 12);
+  }
+  .o-sm-9{
+    @include o(9, 12);
+  }
+  .o-sm-10{
+    @include o(10, 12);
+  }
+  .o-sm-11{
+    @include o(11, 12);
+  }
+  .o-sm-12{
+    @include o(12, 12);
+  }
+}
+
+//md
+@media only screen and (min-width: $md-width+1px){
+  .o-md-0{
+    @include o(0, 12);
+  }    
+  .o-md-1{
+    @include o(1, 12);
+  }
+  .o-md-2{
+    @include o(2, 12);
+  }
+  .o-md-3{
+    @include o(3, 12);
+  }
+  .o-md-4{
+    @include o(4, 12);
+  }
+  .o-md-5{
+    @include o(5, 12);
+  }
+  .o-md-6{
+    @include o(6, 12);
+  }
+  .o-md-7{
+    @include o(7, 12);
+  }
+  .o-md-8{
+    @include o(8, 12);
+  }
+  .o-md-9{
+    @include o(9, 12);
+  }
+  .o-md-10{
+    @include o(10, 12);
+  }
+  .o-md-11{
+    @include o(11, 12);
+  }
+  .o-md-12{
+    @include o(12, 12);
+  }
+}
+
+//lg
+@media only screen and (min-width: $lg-width+1px){
+  .o-lg-0{
+    @include o(0, 12);
+  }
+  .o-lg-1{
+    @include o(1, 12);
+  }
+  .o-lg-2{
+    @include o(2, 12);
+  }
+  .o-lg-3{
+    @include o(3, 12);
+  }
+  .o-lg-4{
+    @include o(4, 12);
+  }
+  .o-lg-5{
+    @include o(5, 12);
+  }
+  .o-lg-6{
+    @include o(6, 12);
+  }
+  .o-lg-7{
+    @include o(7, 12);
+  }
+  .o-lg-8{
+    @include o(8, 12);
+  }
+  .o-lg-9{
+    @include o(9, 12);
+  }
+  .o-lg-10{
+    @include o(10, 12);
+  }
+  .o-lg-11{
+    @include o(11, 12);
+  }
+  .o-lg-12{
+    @include o(12, 12);
+  }
+}
+
+//xlg - xtra large screen
+@media only screen and (min-width: $xl-width+1px){
+  //offset
+  .o-xlg-0{
+    @include o(0, 12);
+  }
+  .o-xlg-1{
+    @include o(1, 12);
+  }
+  .o-xlg-2{
+    @include o(2, 12);
+  }
+  .o-xlg-3{
+    @include o(3, 12);
+  }
+  .o-xlg-4{
+    @include o(4, 12);
+  }
+  .o-xlg-5{
+    @include o(5, 12);
+  }
+  .o-xlg-6{
+    @include o(6, 12);
+  }
+  .o-xlg-7{
+    @include o(7, 12);
+  }
+  .o-xlg-8{
+    @include o(8, 12);
+  }
+  .o-xlg-9{
+    @include o(9, 12);
+  }
+  .o-xlg-10{
+    @include o(10, 12);
+  }
+  .o-xlg-11{
+    @include o(11, 12);
+  }
+  .o-xlg-12{
+    @include o(12, 12);
+  }
+}
+
+///xxl
+@media only screen and (min-width: $xxl-width+1px){
+  //offset
+  .o-xxl-0{
+    @include o(0, 12);
+  }
+  .o-xxl-1{
+    @include o(1, 12);
+  }
+  .o-xxl-2{
+    @include o(2, 12);
+  }
+  .o-xxl-3{
+    @include o(3, 12);
+  }
+  .o-xxl-4{
+    @include o(4, 12);
+  }
+  .o-xxl-5{
+    @include o(5, 12);
+  }
+  .o-xxl-6{
+    @include o(6, 12);
+  }
+  .o-xxl-7{
+    @include o(7, 12);
+  }
+  .o-xxl-8{
+    @include o(8, 12);
+  }
+  .o-xxl-9{
+    @include o(9, 12);
+  }
+  .o-xxl-10{
+    @include o(10, 12);
+  }
+  .o-xxl-11{
+    @include o(11, 12);
+  }
+  .o-xxl-12{
+    @include o(12, 12);
+  }
+}
